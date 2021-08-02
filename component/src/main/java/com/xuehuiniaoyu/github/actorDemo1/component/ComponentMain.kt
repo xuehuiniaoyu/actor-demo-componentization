@@ -26,8 +26,8 @@ class ComponentMain(context: Context) {
 
     private val logger by lazy {
         Actor(
-            Actor(components).imitate(ComponentManagerProxy::class.java).getComponent("logger")
-        ).imitate(LoggerProxy::class.java)
+            Actor(components).imitator(ComponentManagerProxy::class.java).getComponent("logger")
+        ).imitator(LoggerProxy::class.java)
     }
 
     fun load() {

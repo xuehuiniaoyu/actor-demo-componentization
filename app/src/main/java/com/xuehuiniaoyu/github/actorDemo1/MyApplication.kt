@@ -31,5 +31,5 @@ class MyApplication: Application() {
         }
     }
 
-    fun proxyComponent(component: Any) = Actor(component).imitate(ComponentLife::class.java)
+    fun proxyComponent(component: Any) = Actor(component).imitator(ComponentLife::class.java)
 }
